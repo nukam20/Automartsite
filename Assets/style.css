@@ -1,0 +1,137 @@
+body.form-wrapper{
+  background-color: #E5E5E5;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   height: 100vh;
+   width: 100%;
+   line-height: 4em;
+}
+* {box-sizing: border-box;}
+/* .container{
+} */
+/* variables */
+ .color{
+   color: #ffffff
+ }
+.form-container{
+  width: 40vw;
+}
+.form{
+  background-color: #ffffff;
+  padding: 50px 20px;
+  width: 100%;
+  height: 46.9rem;
+}
+.form.login-container{
+  height: 38em;
+}
+input{
+  width: 100%;
+  padding:15px 5px;
+  margin: 12px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #E5E5E5
+}
+
+.form-button{
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  background-color: #843775;
+}
+.password-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.highlighter{
+  color: #E9AF39;
+}
+
+@media screen and (max-width: 769px) {
+  .password-wrapper{
+     flex-direction: column;
+     justify-content: center;
+  }
+
+}
+
+/* Landing page */
+.nav-items{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin-right: 30px;
+  position: absolute;
+  right: 18px;
+    top: 30px;
+    z-index: 10;
+}
+.nav-links {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  background: transparent;
+}
+.nav-links:hover {
+  color: #843775;
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(127, 50, 111, 0.73);
+  overflow-y: hidden;
+  transition: 0.5s; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.7;
+}
+.hero {
+  width:100%;
+  height: 100vh; 
+  background-image:url('../images/automobile-cars-headlights.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+  z-index: 10;
+  background: transparent;
+}
+.start-btn{
+  padding:15px;
+  background-color: #843775;
+  color: #ffffff;
+  z-index: 11;
+  border-radius: 5px;
+  
+}
+
+.modal{
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 50;
+  bottom: 10%;
+  width: 40%; 
+  height: 30%; 
+  overflow: auto;
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+/* close modal */
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
