@@ -1,0 +1,124 @@
+@keyframes dropdown{
+  0% {
+    transform:translateY(0);
+  }
+  100%{
+    transform:translateY(80%)
+  }
+}
+
+
+@keyframes remDropdown{
+  0% {
+    transform:translateY(0);
+  }
+  100%{
+    transform:translateY(-100%)
+  }
+}
+
+header{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  background-color: #843775;
+  opacity:0.7;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-left: 2%;
+}
+  .nav-items {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+
+.nav-links {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #ffffff;
+  background: transparent;
+}
+
+
+.nav-links:hover {
+  color: #843775;
+}
+.Navbar__Link-toggle {
+  display: none
+}
+
+@media screen and (max-width:600px){
+  
+  header{
+    background-image: url('../images/automobile-cars-headlights.jpg');
+    
+  }
+  .logo{
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .nav-items{
+    display:none;
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+
+
+  .nav-items li{
+    border-bottom:2px solid white;
+    margin-bottom:7px;
+    width:inherit;
+  }
+  .display-nav{
+    display:block;
+    animation: dropdown 1s linear 0s  alternate;
+  }
+
+  .rem-dropdown{
+    animation: remDropdown 1s linear 0s  alternate;
+  }
+
+  .nav-bar{
+    width:100%;
+    display:flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+    flex-direction:column;
+  }
+
+.ham{
+  border:2px solid white;
+  width:30px;
+  margin-bottom:10px;
+}
+
+.ham-wrapper{
+  display:block;
+  margin-top:2%;
+  margin-right:2%;
+}
+
+
+  /* .nav-items{
+    flex-direction: column;
+    align-items: end;
+    display: none;
+  }
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+  } */
+}
