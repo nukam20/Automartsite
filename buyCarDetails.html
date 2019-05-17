@@ -5,35 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="Assets/style.css">
+  <link rel="stylesheet" href="Assets/nav.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>Document</title>
 </head>
-<body>
-  <header>
-    <nav class="nav-bar">
-      <ul class="nav-items">
-        <li><a href="LandingPage.html" class="nav-links">Home</a></li>
-        <li><a href="sellDetails.html" class="nav-links"> Sell a car</a></li>
-        <li><a href="buyCarDetails.html" class="nav-links" id="">Buy a car</a></li>
-        <li><a href="Login.html" class="nav-links">Log In</a></li>
-      </ul>
-    </nav>
-  </header>
+<body class="color-ash">
+    <header>
+        <div class="logo color-white">
+            AUTOMART
+          </div>
+            <!-- Navbar  -->
+            <nav class="nav-bar">
+                <!-- <div class="Navbar__Link Navbar__Link-toggle">
+                    <i class="fas fa-bars"></i>
+                  </div> -->
+                <div  class="ham-wrapper">
+                  <div class="ham"></div>
+                  <div class="ham"></div>
+                  <div class="ham"></div>
+                </div>
+        
+                
+              <ul class="nav-items">
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="sellDetails.html" class="nav-links"> Sell a car</a></li>
+                <li><a href="buyCarDetails.html" class="nav-links" id="">Buy a car</a></li>
+                <li><a href="Login.html" class="nav-links">Log In</a></li>
+                <li><a href="shoppingcart.html"><i class="fas fa-shopping-cart nav-links"></i></a></li>
+              </ul>
+            </nav>
+        
+        <!-- End Navbar -->
+        
+        
+          </header>
   <main>
-  <div>
-    <h2>Search filter</h2>
+  <div class="container-grid"> 
+    <h2 class="container-grid">Search filter</h2>
     <div class="buycar-details-wrapper">
       <div class="carmake-wrapper">
         <p class="car-make">Car make</p>
-        <form action="/action_page.php">
-          <select name="All">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
-          </select>
-          <br><br>
-        </form>
+        <div class=>
+            <form action="/action_page.php">
+              <select name="All">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+              <br><br>
+            </form>
+        </div>
         </div>
 
         <div class="carstate-wrapper">
@@ -88,90 +110,140 @@
             <br><br>
           </form>
           </div>
+          <div>
+              <button class="search-btn" type="button">Search</button>
+          </div>
 
-          <button class="search-btn" type="button">Search</button>
     </div>
-
-    </div>
-   
     <div class="container-grid">
       <div class="grid-row">
         <div class="grid-item">
-          <a class="wrapping-link" href="https://thecodeteam.com/projects/rex-ray/"></a>
+
           <div class="grid-item-wrapper">
             <div class="grid-item-container">
-              <div class="grid-image-top rex-ray">
-                <span class="centered project-image-bg rex-ray-image"></span>
+              <div class="grid-image-top rex-ray"><span class="centered project-image-bg edgex-image"><img src="./images/car.jpeg"></span>
               </div>
               <div class="grid-item-content">
-                <span class="item-title">REX-Ray</span>
-                <span class="item-category">Infrastructure as Code</span>
-                <span class="item-excerpt">REX-Ray is a container storage orchestration engine enabling persistence fo...</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="item-title">Toyota Camry <sm>&#x002E; used</sm></span>
+                <span class="item-title ">Camry</span>
+                <span class="item-category price">N1,000,000</span>
+                <div class="info-wrapper">
+                    <button data-id="199" class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button data-id="199-b" class="buy-car more-info">Buy car</button>
+                </div>
+                <div hidden>
+                  <span class="manufacturer">toyota</span>
+                  <span class="model">Camry</span>
+                  <span class="state">new</span>
+                  <span class="price">10000</span>
+                  <span class="transmission">Automatic</span>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
         <div class="grid-item">
-          <a class="wrapping-link" href="https://www.dell.com/learn/us/en/555/campaigns/xps-linux-laptop_us" target="_blank"></a>	   
+          <a class="wrapping-link" href="buyCarDetails.html" target="_blank"></a>	   
           <div class="grid-item-wrapper">
-            <div class="grid-item-container">
-              <div class="grid-image-top sputnik">
-                <span class="centered project-image-bg sputnik-image"></span>
-              </div>
-              <div class="grid-item-content">
-                <span class="item-title">Sputnik</span>
-                <span class="item-category">Developer System</span>
-                <span class="item-excerpt">A developer focused laptop with a pre-installed and fully support Ubuntu im...</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
-              </div>
-            </div>
+              <div class="grid-item-container">
+                  <div class="grid-image-top rex-ray"><span class="centered project-image-bg edgex-image"><img src="./images/car.jpeg"></span>
+                  </div>
+                  <div class="grid-item-content">
+                      <span class="item-title">Toyota Corolla <sm>&#x002E; used</sm></span>
+                    <span class="item-title">corolla</span>
+                    <span class="item-category price">N2,000,000</span>
+                    <div class="info-wrapper">
+                        <button data-id="11"class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                        <button data-id="11-b" class="buy-car more-info">Buy car</button>
+                    </div>
+                    <div hidden>
+                        <span class="manufacturer">Lexus</span>
+                        <span class="model">corrola</span>
+                        <span class="state">Used</span>
+                        <span class="item-price">10000</span>
+                        <span class="transmission">Automatic</span>
+                      </div>
+                  </div>
+                </div>
           </div>
+          
         </div>
         <div class="grid-item">
           <a class="wrapping-link" href="https://www.edgexfoundry.org/" target="_blank"></a>
           <div class="grid-item-wrapper">
             <div class="grid-item-container">
               <div class="grid-image-top edgex">
-                <span class="centered project-image-bg edgex-image"></span>
+                <span class="centered project-image-bg edgex-image"><img src="./images/car.jpeg"></span>
+
               </div>
               <div class="grid-item-content">
-                <span class="item-title">EdgeX Foundry</span>
-                <span class="item-category">Internet of Things</span>
-                <span class="item-excerpt">A vendor-neutral open source project building a common open framework for I...</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                <span class="item-title">Toyota Corolla <sm>&#x002E; used</sm></span>
+                <span class="item-category">Corolla</span>
+                <span class="item-category price">N2,500,000</span>
+                <div class="info-wrapper">
+                    <button data-id="12"class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button data-id="199-b" class="buy-car more-info">Buy car</button>
+                </div>
+                <div hidden>
+                    <span class="manufacturer">Aston Martin</span>
+                    <span class="model">corrola</span>
+                    <span class="state">new</span>
+                    <span class="itemprice">10000</span>
+                    <span class="transmission">Automatic</span>
+                  </div>
               </div>
             </div>
           </div>
         </div>
         <div class="grid-item">
-          <a class="wrapping-link" href="https://www.openswitch.net/" target="_blank"></a>
+          <a class="wrapping-link" href="fullCarDetails.html" target="_blank"></a>
           <div class="grid-item-wrapper">
             <div class="grid-item-container">
-              <div class="grid-image-top openswitch">
-                <span class="centered project-image-bg openswitch-image"></span>
+              <div class="grid-image">
+                  <span class="centered project-image-bg edgex-image"><img src="./images/honda.jpeg"></span>
               </div>
               <div class="grid-item-content">
-                <span class="item-title">OpenSwitch</span>
-                <span class="item-category">Software Based Infrastructure</span>
-                <span class="item-excerpt">The OpenSwitch platform is an open source, Linux-based network operating sy...</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                <span class="item-title">Toyota Corolla <sm>&#x002E; used</sm></span>
+                <span class="item-category">Corolla</span>
+                <span class="item-category price">N1,500,000</span>
+                <div class="info-wrapper">
+                    <button data-id="13"class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button data-id="13-b" class="buy-car more-info">Buy car</button>
+                </div>
+                <div hidden>
+                    <span class="manufacturer">Lamboghini</span>
+                    <span class="model">Veyron</span>
+                    <span class="state">OLD</span>
+                    <span class="itemprice">10000</span>
+                    <span class="transmission">Manual-hybrid</span>
+                  </div>
               </div>
             </div>
           </div>
         </div>
         <div class="grid-item">
-          <a class="wrapping-link" href="https://github.com/kubernetes/kubernetes/tree/master/examples/volumes/scaleio" target="_blank"></a>
+          <a class="wrapping-link" href="buyCarDetails.html" target="_blank"></a>
           <div class="grid-item-wrapper">
             <div class="grid-item-container">
               <div class="grid-image-top scaleio">
-                <span class="centered project-image-bg scaleio-image"></span>
+                <span class="centered project-image-bg edgex-image"><img src="./images/range.jpg"></span>
               </div>
               <div class="grid-item-content">
-                <span class="item-title">K8s + ScaleIO</span>
-                <span class="item-category">Infrastructure as Code</span>
-                <span class="item-excerpt">Configure Kubernetes resources to consume storage from volumes hosted on Sc...</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                <span class="item-category">Range <sm>&#x002E; new</sm></span>
+                <span class="item-title">Range Rover</span>
+                <span class="item-category price">N1,000,000</span>
+                <div class="info-wrapper">
+                    <button data-id="14"class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button data-id="14-b" class="buy-car more-info">Buy car</button>
+                </div>
+                <div hidden>
+                    <span class="manufacturer">Lamboghini</span>
+                    <span class="model">Veyron</span>
+                    <span class="state">OLD</span>
+                    <span class="itemprice">10000</span>
+                    <span class="transmission">Manual-hybrid</span>
+                  </div>
               </div>
             </div>
           </div>
@@ -181,13 +253,23 @@
           <div class="grid-item-wrapper">
             <div class="grid-item-container">
               <div class="grid-image-top csi">
-                <span class="centered project-image-bg csi-image"></span>
+                <span class="centered project-image-bg edgex-image"><img src="./images/asphalt.jpg"></span>
               </div>
               <div class="grid-item-content">
-                <span class="item-title">Container Storage Interface</span>
-                <span class="item-category">Software Based Infrastructure</span>
-                <span class="item-excerpt">A universal storage interface  allowing easy interoperability between conta...</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                <span class="item-category">Alsphat <sm>&#x002E; new</sm></span>
+                <span class="item-title">Alsphat</span>
+                <span class="item-category price">N1,000,000</span>
+                <div class="info-wrapper">
+                    <button data-id="15"class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button data-id="15-b" class="buy-car more-info">Buy car</button>
+                </div>
+                <div hidden>
+                    <span class="manufacturer">Lamboghini</span>
+                    <span class="model">Veyron</span>
+                    <span class="state">OLD</span>
+                    <span class="itemprice">10000</span>
+                    <span class="transmission">Manual-hybrid</span>
+                  </div>
               </div>
             </div>
           </div>
@@ -197,14 +279,24 @@
           <div class="grid-item-wrapper">
             <div class="grid-item-container">
               <div class="grid-image-top kubernetes">
-                <span class="centered project-image-bg kubernetes-image"></span>
+                <span class="centered project-image-bg edgex-image"><img src="./images/automotive-black.jpg"></span>
               </div>
               <div class="grid-item-content">
-                <span class="item-title">Kubernetes</span>
-                <span class="item-category">Software Based Infrastructure</span>
-                <span class="item-excerpt">An open-source system for automating deployment, scaling, and management of...</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
-              </div>
+                  <span class="item-category">Automotive <sm>&#x002E; new</sm></span>
+                  <span class="item-title">Automotive</span>
+                  <span class="item-category price">N1,000,000</span>
+                  <div class="info-wrapper">
+                      <button data-id="16"class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                      <button data-id="16-b" class="buy-car more-info">Buy car</button>
+                  </div>
+                  <div hidden>
+                      <span class="manufacturer">Lamboghini</span>
+                      <span class="model">Veyron</span>
+                      <span class="state">OLD</span>
+                      <span class="itemprice">10000</span>
+                      <span class="transmission">Manual-hybrid</span>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
@@ -213,14 +305,24 @@
           <div class="grid-item-wrapper">
             <div class="grid-item-container">
               <div class="grid-image-top grpc">
-                <span class="centered project-image-bg grpc-image"></span>
+                <span class="centered project-image-bg edgex-image"><img src="./images/asphalt-2016.jpg"></span>
               </div>
               <div class="grid-item-content">
-                <span class="item-title">GRPC</span>
-                <span class="item-category">Tools and Libraries</span>
-                <span class="item-excerpt">A high performance, open source, general-purpose RPC framework.</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
-              </div>
+                  <span class="item-category">Alsphat <sm>&#x002E; new</sm></span>
+                  <span class="item-title">Alsphat</span>
+                  <span class="item-category price">N1,000,000</span>
+                  <div class="info-wrapper">
+                      <button data-id="17"class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                      <button data-id="17-b" class="buy-car more-info">Buy car</button>
+                  </div>
+                  <div hidden>
+                      <span class="manufacturer">Lamboghini</span>
+                      <span class="model">Veyron</span>
+                      <span class="state">OLD</span>
+                      <span class="itemprice">10000</span>
+                      <span class="transmission">Manual-hybrid</span>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
@@ -229,14 +331,24 @@
           <div class="grid-item-wrapper">
             <div class="grid-item-container">
               <div class="grid-image-top envoy">
-                <span class="centered project-image-bg envoy-image"></span>
+                <span class="centered project-image-bg edgex-image"><img src="./images/asphalt-2015.jpg"></span>
               </div>
               <div class="grid-item-content">
-                <span class="item-title">Envoy</span>
-                <span class="item-category">Software Based Infrastructure</span>
-                <span class="item-excerpt">An open source edge and service proxy, from the developers at Lyft.</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
-              </div>
+                  <span class="item-category">Alsphat <sm>&#x002E; new</sm></span>
+                  <span class="item-title">Alsphat</span>
+                  <span class="item-category price">N1,000,000</span>
+                  <div class="info-wrapper">
+                      <button data-id="18"class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                      <button data-id="18-b" class="buy-car more-info">Buy car</button>
+                  </div>
+                  <div hidden>
+                      <span class="manufacturer">Lamboghini</span>
+                      <span class="model">Veyron</span>
+                      <span class="state">OLD</span>
+                      <span class="itemprice">10000</span>
+                      <span class="transmission">Manual-hybrid</span>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
@@ -245,21 +357,188 @@
           <div class="grid-item-wrapper">
             <div class="grid-item-container">
               <div class="grid-image-top istio">
-                <span class="centered project-image-bg istio-image"></span>
+                <span class="centered project-image-bg edgex-image"><img src="./images/asphalt-auto-2017.jpg"></span>
               </div>
               <div class="grid-item-content">
-                <span class="item-title">Istio</span>
-                <span class="item-category">Software Based Infrastructure</span>
-                <span class="item-excerpt">Connect, secure, control, and observe services.</span>
-                <span class="more-info">View Project <i class="fas fa-long-arrow-alt-right"></i></span>
+                  <span class="item-category">Alsphat <sm>&#x002E; new</sm></span>
+                  <span class="item-title">Alsphat</span>
+                  <span class="item-category price">N1,000,000</span>
+                  <div class="info-wrapper">
+                      <button data-id="19"class=" start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                      <button data-id="19-b" class="buy-car more-info">Buy car</button>
+                  </div>
+                  <div hidden>
+                      <span class="manufacturer">Lamboghini</span>
+                      <span class="model">Veyron</span>
+                      <span class="state">OLD</span>
+                      <span class="itemprice">10000</span>
+                      <span class="transmission">Manual-hybrid</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <a class="wrapping-link" href="buyCarDetails.html" target="_blank"></a>
+          <div class="grid-item-wrapper">
+            <div class="grid-item-container">
+              <div class="grid-image-top scaleio">
+                <span class="centered project-image-bg edgex-image"><img src="./images/landrover.jpg"></span>
+              </div>
+              <div class="grid-item-content">
+                <span class="item-category">Range <sm>&#x002E; used</sm></span>
+                <span class="item-title">Range Rover</span>
+                <span class="item-category">N1,000,000</span>
+                <div class="info-wrapper">
+                    <button data-id="20"class="start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button data-id="20-b" class="buy-car more-info">Buy car</button>
+                </div>
+                <div hidden>
+                    <span class="manufacturer">Lamboghini</span>
+                    <span class="model">Veyron</span>
+                    <span class="state">OLD</span>
+                    <span class="itemprice">10000</span>
+                    <span class="transmission">Manual-hybrid</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <a class="wrapping-link" href="buyCarDetails.html" target="_blank"></a>
+          <div class="grid-item-wrapper">
+            <div class="grid-item-container">
+              <div class="grid-image-top scaleio">
+                <span class="centered project-image-bg edgex-image"><img src="./images/range.jpg"></span>
+              </div>
+              <div class="grid-item-content">
+                <span class="item-category">Range <sm>&#x002E; used</sm></span>
+                <span class="item-title">Range Rover</span>
+                <span class="item-category">N1,000,000</span>
+                <div class="info-wrapper">
+                    <button data-id="21" class="start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
+                    <button data-id="21-b" class="buy-car more-info">Buy car</button>
+                </div>
+                <div hidden>
+                    <span class="manufacturer">Lamboghini</span>
+                    <span class="model">Veyron</span>
+                    <span class="state">OLD</span>
+                    <span class="itemprice">10000</span>
+                    <span class="transmission">Manual-hybrid</span>
+                  </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    </div>
+   <!-- MODALS FOR VIEWING FORMS -->
+   <div class="modal start-modal viewForm" id="199">
+      <div class="car-item detail" >
+          <h1 class="detail-head">Vehicle Details</h1>
+          <div class="view-img-wrapper">
+              <img src="./images/car.jpeg" class="view-img"/>
+          </div>
+   
+          <p class="model-span">Model: <span id = 'model'>Corrolla</span></p>
+          <p class='state'>State: <span id = 'state'> New</span> </p>
+          <p class="man-span">Manufacturer: <span id = 'manufacturer'>Toyota</span></p>
+          <p class="body-span">Transmission: <span id = 'transmission'>Transmission</span></p>
+          <hr>
+          <span class="price-span">Price:  <p id="price" class="price"> N1,600,000</p></span>
+          <div class="sold-edit">
+          <button class="" id="">Flag</button>
+          <button class="close-view">Close</button>
+          </div>
+          </div>
+          
+      </div>
+      <!-- <div class="modal start-modal viewForm" id="11">
+          <div class="car-item detail" >
+              <h1 class="detail-head">Vehicle Details</h1>
+              <div class="view-img-wrapper">
+                  <img src="./images/car.jpeg" class="view-img"/>
+              </div>
+       
+              <p class="model-span">Model: Toyota Camry</p>
+              <p class='state'>State: New</p>
+              <p class="man-span">Manufacturer: lexus</p>
+              <p class="body-span">Transmission: Automatic</p>
+              <hr>
+              <span class="price-span">Price:  <p class="price"> N1,600,000</p></span>
+              <div class="sold-edit">
+              <button class="" id="">Flag</button>
+              <button class="close-view">Close</button>
+              </div>
+              </div>
+              
+          </div>
+          <div class="modal start-modal viewForm" id="11">
+              <div class="car-item detail" >
+                  <h1 class="detail-head">Vehicle Details</h1>
+                  <div class="view-img-wrapper">
+                      <img src="./images/car.jpeg" class="view-img"/>
+                  </div>
+           
+                  <p class="model-span">Model: Toyota Camry</p>
+                  <p class='state'>State: New</p>
+                  <p class="man-span">Manufacturer: Toyota</p>
+                  <p class="body-span">Transmission: Automatic</p>
+                  <hr>
+                  <span class="price-span">Price:  <p class="price"> N1,600,000</p></span>
+                  <div class="sold-edit">
+                  <button class="" id="">Flag</button>
+                  <button class="close-view">Close</button>
+                  </div>
+                  </div>
+                  
+              </div>
+              <div class="modal start-modal viewForm" id="12">
+                  <div class="car-item detail" >
+                      <h1 class="detail-head">Vehicle Details</h1>
+                      <div class="view-img-wrapper">
+                          <img src="./images/car.jpeg" class="view-img"/>
+                      </div>
+               
+                      <p class="model-span">Model: Toyota Camry</p>
+                      <p class='state'>State: New</p>
+                      <p class="man-span">Manufacturer: Toyota</p>
+                      <p class="body-span">Transmission: Automatic</p>
+                      <hr>
+                      <span class="price-span">Price:  <p class="price"> N1,600,000</p></span>
+                      <div class="sold-edit">
+                      <button class="" id="">Flag</button>
+                      <button class="close-view">Close</button>
+                      </div>
+                      </div>
+                      
+                  </div>
+                  <div class="modal start-modal viewForm" id="13">
+                      <div class="car-item detail" >
+                          <h1 class="detail-head">Vehicle Details</h1>
+                          <div class="view-img-wrapper">
+                              <img src="./images/car.jpeg" class="view-img"/>
+                          </div>
+                   
+                          <p class="model-span">Model: Toyota Camry</p>
+                          <p class='state'>State: New</p>
+                          <p class="man-span">Manufacturer: Toyota</p>
+                          <p class="body-span">Transmission: Automatic</p>
+                          <hr>
+                          <span class="price-span">Price:  <p class="price"> N1,600,000</p></span>
+                          <div class="sold-edit">
+                          <button class="" id="">Flag</button>
+                          <button class="close-view">Close</button>
+                          </div>
+                          </div>
+                          
+                      </div> -->
+
+<!-- View Car Details --> 
+
   </main>
   <script src="./Assets/index.js"></script>
+  <script src="./Assets/nav.js"></script>
 </body>
 </html>
