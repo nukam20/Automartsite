@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Assets/style.css">
+  <link rel="stylesheet" href="Assets/nav.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body class="color-ash">
+  <header>
+    <nav class="nav-bar">
+      <ul class="nav-items">
+        <li><a href="index.html" class="nav-links">Home</a></li>
+        <li><a href="sellDetails.html" class="nav-links"> Sell a car</a></li>
+        <li><a href="buyCarDetails.html" class="nav-links" id="">Buy a car</a></li>
+        <li><a href="Login.html" class="nav-links">Log In</a></li>
+        <li><a href="shoppingcart.html"><i class="fas fa-shopping-cart nav-links"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    
+<!-- View Car Details --> 
+<div class="viewDform">
+    <div class="car-item detail" id="car-item">
+    <h1 class="detail-head">Vehicle Details</h1>
+    <div>
+    <div>
+    <img src="" class="img"/>
+    </div>
+    <span class="model-span">Model: <p class='model'> Toyota Camry</p></span>
+    <p class='state'>State: New</p>
+    <span class="man-span">Manufacturer: <p class='manufacturer'> Toyota</p></span>
+    <span class="body-span">Body Type: <p class='b-type'>Body Type: Car</p></span>
+    <hr>
+    <span class="price-span">Price:  <p class="price"> N1,600,000</p></span>
+    <div class="sold-edit">
+    
+    <button onclick='flagAdvert(event)'>Flag</button>
+    <button onclick='closeDetail(event)'>Close</button>
+    </div>
+    </div>
+    </div>
+    </div>
+  </main>
+  <script src="./Assets/index.js"></script>
+</body>
+</html>

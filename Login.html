@@ -5,22 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="Assets/style.css">
+  <link rel="stylesheet" href="Assets/nav.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <title>Document</title>
 </head>
-<body class="form-wrapper">
+<body>
   
-  <header>
-    <!-- <nav class="">
-      <ul>
-        <li class="Home"></li>
-        <li class="About"></li>
-        <li class=""></li>
-      </ul>
-    </nav> -->
-  </header>
+  
   <main>
-    <div class="form-bg-wrapper">
+      <header>
+          <!-- Navbar  -->
+          <div class="logo color-white">
+              AUTOMART
+            </div>
+          <nav class="nav-bar">
+             <!-- <div class="Navbar__Link Navbar__Link-toggle">
+                 <i class="fas fa-bars"></i>
+               </div> -->
+             <div  class="ham-wrapper">
+               <div class="ham"></div>
+               <div class="ham"></div>
+               <div class="ham"></div>
+             </div>
+     
+     
+           <ul class="nav-items">
+             <li><a href="index.html" class="nav-links">Home</a></li>
+             <li><a href="sellDetails.html" class="nav-links"> Sell a car</a></li>
+             <li><a href="buyCarDetails.html" class="nav-links" id="">Buy a car</a></li>
+             <li><a href="Login.html" class="nav-links">Log In</a></li>
+             <li><a href="shoppingcart.html"><i class="fas fa-shopping-cart nav-links"></i></a></li>
+           </ul>
+         </nav>
+     
+     <!-- End Navbar -->
+   </header>
+    <div class="form-bg-wrapper hero">
         <div class="form-container login-container">
             <form>
                 <h1>Log in to your account</h1>
@@ -31,7 +52,7 @@
                   
                         <div class="password-wrapper">
                           <label for="psw"><b>Password</b></label>
-                          <label for ="forgot psw"><b><a href="#" class="highlighter">Forgot password</a></b></label>
+                          <label for ="forgot psw"><small><a href="#" class="highlighter">Forgot password</a></small></label>
                         </div>
                         <input type="password" placeholder="Password" required/>
                 
@@ -46,5 +67,6 @@
 
   </main>
   <footer></footer>
+  <script src="./Assets/nav.js"></script>
 </body>
 </html>
