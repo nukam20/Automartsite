@@ -4,22 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
   <link rel="stylesheet" href="Assets/style.css">
+  <link rel="stylesheet" href="Assets/nav.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <title>Document</title>
+  <title>Sign up page</title>
 </head>
 <body class="form-wrapper">
-  <header>
-    <!-- <nav class="">
-      <ul>
-        <li class="Home"></li>
-        <li class="About"></li>
-        <li class=""></li>
-      </ul>
-
-
-    </nav> -->
-  </header>
+    <header>
+        <div class="logo color-white">
+            AUTOMART
+          </div>
+          <!-- Navbar  -->
+        <nav class="nav-bar">
+           <!-- <div class="Navbar__Link Navbar__Link-toggle">
+               <i class="fas fa-bars"></i>
+             </div> -->
+           <div  class="ham-wrapper">
+             <div class="ham"></div>
+             <div class="ham"></div>
+             <div class="ham"></div>
+           </div>
+   
+   
+         <ul class="nav-items">
+           <li><a href="LandingPage.html" class="nav-links">Home</a></li>
+           <li><a href="sellDetails.html" class="nav-links"> Sell a car</a></li>
+           <li><a href="buyCarDetails.html" class="nav-links" id="">Buy a car</a></li>
+           <li><a href="Login.html" class="nav-links">Log In</a></li>
+           <li><a href="shoppingcart.html"><i class="fas fa-shopping-cart nav-links"></i></a></li>
+         </ul>
+       </nav>
+   
+   <!-- End Navbar -->
+ </header>
   <main>
     <div class="form-bg-wrapper">
         <div class="form-container login">  
@@ -34,7 +53,7 @@
                   <label for="psw"><b>Confirm Password</b></label>
                   <input type="password" placeholder="Password"/>
           
-                  <button class="form-button color">Sign up</button>
+                  <button class="form-button color-white">Sign up</button>
                   
                   <p>Have an account? <span class="highlighter signup"><a href="Login.html" class="highlighter">Log in</a></span> </p>    
                 </div>
@@ -50,5 +69,6 @@
     
   </main>
   <footer></footer>
+  <script src='Assets/nav.js'></script>
 </body>
 </html>
