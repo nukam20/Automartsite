@@ -29,6 +29,7 @@ header{
   font-size: 3rem;
   font-weight: 500;
   margin-left: 2%;
+  text-decoration: none;
 }
   .nav-items {
   display: flex;
@@ -62,6 +63,7 @@ header{
   .logo{
     font-size: 2rem;
     font-weight: 200;
+    text-decoration: none;
   }
   .nav-items{
     display:none;

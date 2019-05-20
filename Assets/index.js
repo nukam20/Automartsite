@@ -11,7 +11,38 @@ for(const close of closes){
 }
 }
 
+// Function to close modal for buy cars
+const closeBuys = document.querySelectorAll(".close-buy")
+for(const closeBuy of closeBuys){
+  console.log("del")
+  if(closeBuy!= null){
+  closeBuy.addEventListener('click', function(event){
+    let modal = document.querySelector('.start-buy');
+        modal.style.display = 'none';
+        modal = ""
+  })
+}
+}
+
+// Function to close modal for report cars
+const closeReports = document.querySelectorAll(".close-report")
+for(const closeReport of closeReports){
+  console.log("del")
+  if(closeReport!= null){
+  closeReport.addEventListener('click', function(event){
+    let modal = document.querySelector('.start-report');
+        modal.style.display = 'none';
+        modalCar.style.display = "none";
+  })
+}
+}
+
+// 
+
 const buttons = document.querySelectorAll('.start-btn');
+const buyButtons = document.querySelectorAll('.buy-car');
+const reportButtons = document.querySelectorAll('.flag')
+// Modal for view car details
 for (const button of buttons){
   console.log('hs')
 
@@ -33,11 +64,39 @@ for (const button of buttons){
       modal.querySelector("#transmission").innerHTML = transmission;
       // modal.
       modal.style.display = 'block';
+      var modalCar
+      modal=modalCar
+      return modalCar
     })
   }
 
 }
 
+//Modal for buy cars
+for (const buyButton of buyButtons){
+  if(buyButton != null){
+    buyButton.addEventListener('click',function(event){
+      var price = buyButton.parentElement.parentElement.querySelector('.price').innerHTML;
+
+      let modal = document.getElementById('19');
+      modal.querySelector("#price").innerHTML = price;
+      modal.style.display = "block";
+    })
+  }
+}
+
+// Function for Flag modal
+for (const reportButton of reportButtons){
+  if(reportButton != null){
+    reportButton.addEventListener('click',function(event){
+      var price = reportButton.parentElement.parentElement.querySelector('.price').innerHTML;
+
+      let modal = document.getElementById('20');
+      modal.style.display = "block";
+    })
+  }
+}
+// Function to close form for sell details
 var closeSellCarDetailsForm = document.getElementById('close-sellDetails')
 closeSellCarDetailsForm.addEventListener('click',closeSellCarDetailsfnc)
 
@@ -48,34 +107,4 @@ function closeSellCarDetailsfnc (){
 }
 
 
-  // function viewDetail(e){
-  //   let tgt = e.target
-  //   let parentDiv = tgt.parentNode.parentNode.parentNode.id
-  //   let price = document.querySelector('#' + parentDiv + ' ' + '.price').innerHTML;
-  //   let model = document.querySelector('#' + parentDiv + ' ' + '.model').innerHTML;
-    
-  //   let src = document.querySelector('#' + parentDiv + ' ' + '.img').src;
-  //   let form = document.querySelector('.viewDform').classList.add('viewForm')
-  //   let formPrice = document.querySelector('.price').innerHTML = price;
-  //   let formModel = document.querySelector('.model').innerHTML = model;
-  //   let formBody = document.querySelector('.b-type').innerHTML = model;
-  //   let formManufacturer = document.querySelector('.manufacturer').innerHTML = model;
-  //   let formImg = document.querySelector('.img').src = src;
-  //   // alert(price)
-    
-  //   }
-
-function closeOrder(){
-  
-  document.querySelector('.viewOform').classList.add('close-modal');
-
-  setTimeout(()=>{
-      document.querySelector('.viewOform').classList.remove('viewForm');
-      document.querySelector('.viewOform').classList.remove('close-modal');
-  },1500)
-
-  (function remInterval(){
-  clearTimeout()
-})();
-  
-}
+ 

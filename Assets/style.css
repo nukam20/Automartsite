@@ -70,8 +70,7 @@ button {
   background-image: url('486346-PGSSTO-831.jpg'); 
 
 }
-input,
-textarea {
+input,select,textarea {
   width: 100%;
   padding: 15px 5px;
   margin: 12px 0;
@@ -105,6 +104,7 @@ width: 40%;
 }
 .sellDetails-container{
   width: 40%;
+  margin-top: 0
 }
 /*  */
 .successIcon-wrapper {
@@ -132,6 +132,10 @@ width: 40%;
   }
   .sellDetails-container{
     width: 80%;
+  }
+  .login-container{
+    width: 80%;
+    line-height: 3rem;
   }
   
 }
@@ -250,6 +254,14 @@ header {
 @media(max-width: 550px) {
   .buycar-details-wrapper {
    flex-direction: column;
+  }
+  .viewForm .detail{
+    margin:auto;
+    width:90% !important;
+    margin:auto;
+    background:white;
+    padding:15px;
+    margin-top:3%;
   }
 }
 
@@ -468,3 +480,4 @@ button.more-info{
  box-shadow:  0 1px 3px 0 rgba(255,255,255,.12), rgba(255,255,255,.12);
  overflow: hidden;
 }
+/* media qu */

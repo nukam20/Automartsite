@@ -11,9 +11,9 @@
 </head>
 <body class="color-ash">
     <header>
-        <div class="logo color-white">
-            AUTOMART
-          </div>
+        <div class="logo-wrapper">
+          <a href="index.html" class="color-white logo">AUTOMART</a>
+        </div>
             <!-- Navbar  -->
             <nav class="nav-bar">
                 <!-- <div class="Navbar__Link Navbar__Link-toggle">
@@ -31,7 +31,7 @@
                 <li><a href="sellDetails.html" class="nav-links"> Sell a car</a></li>
                 <li><a href="buyCarDetails.html" class="nav-links" id="">Buy a car</a></li>
                 <li><a href="Login.html" class="nav-links">Log In</a></li>
-                <li><a href="shoppingcart.html"><i class="fas fa-shopping-cart nav-links"></i></a></li>
+                <!-- <li><a href="shoppingcart.html"><i class="fas fa-shopping-cart nav-links"></i></a></li> -->
               </ul>
             </nav>
         
@@ -388,7 +388,7 @@
               <div class="grid-item-content">
                 <span class="item-category">Range <sm>&#x002E; used</sm></span>
                 <span class="item-title">Range Rover</span>
-                <span class="item-category">N1,000,000</span>
+                <span class="item-category price">N1,000,000</span>
                 <div class="info-wrapper">
                     <button data-id="20"class="start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
                     <button data-id="20-b" class="buy-car more-info">Buy car</button>
@@ -414,7 +414,7 @@
               <div class="grid-item-content">
                 <span class="item-category">Range <sm>&#x002E; used</sm></span>
                 <span class="item-title">Range Rover</span>
-                <span class="item-category">N1,000,000</span>
+                <span class="item-category price">N1,000,000</span>
                 <div class="info-wrapper">
                     <button data-id="21" class="start-btn more-info color-white">View more details<i class="fas fa-long-arrow-alt-right"></i></button>
                     <button data-id="21-b" class="buy-car more-info">Buy car</button>
@@ -426,6 +426,13 @@
                     <span class="itemprice">10000</span>
                     <span class="transmission">Manual-hybrid</span>
                   </div>
+                  <!-- <div hidden>
+                    <span class="manufacturer">Lamboghini</span>
+                    <span class="model">Veyron</span>
+                    <span class="state">OLD</span>
+                    <span class="itemprice">10000</span>
+                    <span class="transmission">Manual-hybrid</span>
+                  </div> -->
               </div>
             </div>
           </div>
@@ -448,12 +455,51 @@
           <hr>
           <span class="price-span">Price:  <p id="price" class="price"> N1,600,000</p></span>
           <div class="sold-edit">
-          <button class="" id="">Flag</button>
+          <button class="flag" id="">Flag</button>
           <button class="close-view">Close</button>
           </div>
           </div>
           
       </div>
+      <!-- MODAL FOR BUY CARS -->
+      <div class="modal start-buy viewForm" id="19">
+        <div class="car-item detail" >
+            <h1 class="detail-head">Purchase Order</h1>
+            <div class="">
+              <input class="" placeholder="price" id="price">
+            </div>
+           <div class="">
+            <select name="All">
+                <option value="sold">sold</option>
+                <option value="unsold">unsold</option>
+               
+              </select>
+           </div>
+           <button class="submit">POST ORDER</button>
+           <button class="close-buy">Close</button>
+            </div>
+            
+        </div>
+        <!-- MODAL FOR REPORT POST -->
+
+        <div class="modal start-report viewForm" id="20">
+            <div class="car-item detail" >
+                <h1 class="detail-head">REPORT AD</h1>
+                <div class="">
+                  <input class="" placeholder="complaint" id="price">
+                </div>
+               <div class="">
+                <textarea  class="" type="text" name="case description">
+
+                </textarea>
+               </div>
+               <button class="submit">REPORT ADVERT</button>
+               <button class="close-report">Close</button>
+                </div>
+                
+            </div>
+
+
       <!-- <div class="modal start-modal viewForm" id="11">
           <div class="car-item detail" >
               <h1 class="detail-head">Vehicle Details</h1>
